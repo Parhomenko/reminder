@@ -38,35 +38,22 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.wrapper {
-	max-width: 500px;
-	width: 100%;
-	margin: 0 auto;
-	background: silver;
-	padding: 20px;
-	overflow: hidden;
-}
-.header {
-}
-.header input[type=text] {
-	padding: 10px;
-	font-size: 14px;
-	display: block;
-	max-width: 50%;
-	width: 100%;
-	float: left;
-}
-.header input[type=submit] {
-	float: right;
-	padding: 10px;
-}
-ul {
-	clear: both;
-}
-
-li.qqq{
-	text-decoration: line-through;
-}
+.wrapper {max-width: 500px;	width: 100%;margin: 0 auto;background: silver;	padding: 20px;	overflow: hidden;	position: fixed;top: 10%;left: 30%;	border-radius: 5px;	box-shadow: 2px 3px 4px #cecece;}
+.header {overflow: hidden;margin-bottom: 10px;}
+.header input[type=text] {padding: 5px;	font-size: 14px;display: block;	max-width: 70%;	width: 100%;float: left;border-radius: 5px;	border: 2px solid rgb(190, 165, 165);}
+.header input[type=text]:focus{box-shadow: inset 0px 0px 3px rgb(82, 72, 72);}
+.header input[type=submit] {transition: all 0.5s ease;float: right;padding: 6px;max-width: 25%;width: 100%;background: darkgray;border: 2px solid rgb(190, 165, 165);	border-radius: 5px;	color: #fff;}
+.header input[type=submit]:hover{background: rgb(164, 231, 190);}
+ul {clear: both;overflow: hidden;margin-bottom: 10px;}
+li{	padding: 5px 0px;font-size: 15px;}
+li.qqq{	text-decoration: line-through;}
+li input[type='checkbox']{position: relative;}
+li input[type='checkbox']:before{display: block; width: 35px; height: 35px;	position: absolute;background: url(../images/yes.png) no-repeat;content: '';background-size: 70%;top: -9px;left: -7px;margin-left: 2px;}
+li input[type='button']{background:lightgray; float: right;max-width: 25%;display: inline-block;width: 100%;padding: 6px;border-radius: 4px;color: #fff;border: none;transition: all 0.5s ease;}
+li input[type='button']:hover{background: rgb(231, 111, 111);}
+li span{margin: 0 10px;}
+.wrapper>input[type=button]{background:darkgray; transition: all 0.5s ease;max-width: 49.6%;  display: inline-block;  width: 100%;  padding: 6px;  border-radius: 4px;  color: #fff;  border: none;  transition: all 0.5s ease;}
+.wrapper>input[type=button]:hover{background: rgb(231, 111, 111);}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/

@@ -5,17 +5,16 @@ myInput.onclick = function () {
 
     if (text != '') {
         var newLi = document.createElement('li');
-        var newSpan = document.createElement('span');
         var newCheck = document.createElement('input');
         newCheck.type = 'checkbox';
+        var newSpan = document.createElement('span');
         var newButton = document.createElement('input');
         newButton.type = 'button';
         newButton.setAttribute('value', 'delete');
         newButton.classList.add('delete');
 
-
-        newLi.appendChild(newSpan);
         newLi.appendChild(newCheck);
+        newLi.appendChild(newSpan);
         newLi.appendChild(newButton);
 
 
@@ -49,7 +48,9 @@ myInput.onclick = function () {
 
 
 
-
+    document.querySelector('#delete_all').addEventListener('click', function(){
+        document.querySelector('.list').innerHTML='';
+    });
 
 
 
